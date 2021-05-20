@@ -5,28 +5,22 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
+      <nav class="navigation_menu">
+        <v-btn class="navigation_menu__item">
+          <router-link to="/">
+            Roulette room
+          </router-link>
+        </v-btn>
+        <v-btn class="navigation_menu__item">
+          <router-link to="/team-room">
+            Team Room
+          </router-link>
+        </v-btn>
+        <v-btn class="navigation_menu__item">
+          Hall Of Fame
+        </v-btn>
+      </nav>
+      <v-spacer />
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
@@ -38,23 +32,26 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
+<style lang="scss" scoped>
+  @import './styles/main.scss';
+</style>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
 
-  components: {
-    HelloWorld,
-  },
+  components: {},
 
   data: () => ({
     //
   }),
+  methods: {
+
+  },
 };
 </script>
