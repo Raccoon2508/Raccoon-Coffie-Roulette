@@ -17,7 +17,9 @@
           </router-link>
         </v-btn>
         <v-btn class="navigation_menu__item">
-          Hall Of Fame
+         <router-link to="/hall-of-fame">
+            Hall Of Fame
+          </router-link>
         </v-btn>
       </nav>
       <v-spacer />
@@ -38,6 +40,7 @@
 </template>
 <style lang="scss" scoped>
   @import './styles/main.scss';
+  
 </style>
 
 <script>
