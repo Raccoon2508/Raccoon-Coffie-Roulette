@@ -4,6 +4,7 @@ const teams = [{
         project: 'Project',
         slogan: 'My Slogan',
         avatarUrl: 'https://assets-client.avastbrowser.com/doodles/avast.png',
+        teamSize: 10,
         teamStructureId: 12,
     },
     {
@@ -12,6 +13,7 @@ const teams = [{
         project: 'Project',
         slogan: 'My Slogan',
         avatarUrl: '',
+        teamSize: 10,
         teamStructureId: 13,
     },
     {
@@ -20,6 +22,7 @@ const teams = [{
         project: 'Project',
         slogan: 'My Slogan',
         avatarUrl: '',
+        teamSize: 10,
         teamStructureId: 13,
     },
     {
@@ -28,6 +31,7 @@ const teams = [{
         project: 'Project',
         slogan: 'My Slogan',
         avatarUrl: '',
+        teamSize: 10,
         teamStructureId: 13,
     },
 ]
