@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import RouletteRoom from '../views/rouletteRoom/RouletteRoom.vue';
 import TeamRoom from '../views/teamRoom/TeamRoom.vue';
 import HallOfFame from '../views/hallOfFame/HallOfFame.vue';
+import TeamRedactor from '../views/teamRedactor/TeamRedactor.vue';
 
 Vue.use(VueRouter);
 
@@ -11,13 +12,17 @@ const routes = [{
         component: RouletteRoom,
     },
     {
+        path: '/hall-of-fame',
+        component: HallOfFame,
+    },
+    {
         path: '/team-room',
         component: TeamRoom,
     },
     {
-        path: '/hall-of-fame',
-        component: HallOfFame,
-    },
+        path: '/add',
+        component: TeamRedactor,
+    }
 ];
 
 const router = new VueRouter({

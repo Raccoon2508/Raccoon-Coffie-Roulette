@@ -4,6 +4,9 @@
     <div class="teams_block__wrapper">
       <TeamsList v-on:selectedTeam = "selectedTeam = $event"/>
       <TeamCard :selected-team="selectedTeam" />
+      <v-btn class="col-md-12">
+        Add team
+      </v-btn>
     </div>
   </div>
 </template>
@@ -32,5 +35,10 @@ export default {
       selectedTeam: {},
     };
   },
+  watch: {
+      selectedTeam() {
+        this.$emit('selectedTeam', this.selectedTeam);
+      }
+  }
 };
 </script>

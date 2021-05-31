@@ -1,3 +1,5 @@
+import { teamates } from './teamates';
+
 const teams = [{
         id: 1,
         name: 'First the Best Team',
@@ -6,6 +8,7 @@ const teams = [{
         avatarUrl: 'https://assets-client.avastbrowser.com/doodles/avast.png',
         teamSize: 10,
         teamStructureId: 12,
+        teamates
     },
     {
         id: 2,
@@ -15,6 +18,7 @@ const teams = [{
         avatarUrl: '',
         teamSize: 10,
         teamStructureId: 13,
+        teamates
     },
     {
         id: 3,
@@ -24,6 +28,7 @@ const teams = [{
         avatarUrl: '',
         teamSize: 10,
         teamStructureId: 13,
+        teamates
     },
     {
         id: 4,
@@ -33,6 +38,7 @@ const teams = [{
         avatarUrl: '',
         teamSize: 10,
         teamStructureId: 13,
+        teamates
     },
 ]
 

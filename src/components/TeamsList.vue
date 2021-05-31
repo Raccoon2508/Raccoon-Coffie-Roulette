@@ -13,7 +13,11 @@
               <v-list-item-title v-text="team.name" />
               <v-list-item-subtitle v-text="team.slogan" />
             </v-list-item-content>
+            
           </v-list-item>
+          <v-btn class="col-md-12" @click="routeToTeamRedactor()">
+          Add team
+        </v-btn>
         </v-list-item-group>
       </v-list>
     
@@ -37,6 +41,10 @@ export default {
   methods: {
     emitSelectedTeam(team) {
       this.$emit('selectedTeam', team);
+    },
+    routeToTeamRedactor() {
+      console.log(this.$router)
+      this.$router.push({path: '/add'});
     }
   }
 
