@@ -1,7 +1,7 @@
 .main_wrapper {
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid red;
+    box-shadow: var(--COMPONENT-SHADOW-BOX);
 }
 
 .navigation_menu {

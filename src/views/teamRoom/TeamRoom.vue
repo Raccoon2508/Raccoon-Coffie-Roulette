@@ -2,7 +2,7 @@
   <div class="teams_block col-md-12">
     <h1>Teams Room</h1>
     <div class="teams_block__wrapper">
-      <TeamsList v-on:selectedTeam = "selectedTeam = $event"/>
+      <TeamsList @selectedTeam="selectedTeam = $event" />
       <TeamCard :selected-team="selectedTeam" />
       <v-btn class="col-md-12">
         Add team
@@ -23,7 +23,6 @@
 </style>
 
 <script>
-import TEAMS from '../../teams';
 import TeamCard from '../../components/TeamCard.vue';
 import TeamsList from '../../components/TeamsList.vue';
 
@@ -36,9 +35,9 @@ export default {
     };
   },
   watch: {
-      selectedTeam() {
-        this.$emit('selectedTeam', this.selectedTeam);
-      }
-  }
+    selectedTeam() {
+      this.$emit('selectedTeam', this.selectedTeam);
+    },
+  },
 };
 </script>

@@ -20,7 +20,7 @@ const routes = [{
         component: TeamRoom,
     },
     {
-        path: '/add',
+        path: '/team-room/add',
         component: TeamRedactor,
     }
 ];
